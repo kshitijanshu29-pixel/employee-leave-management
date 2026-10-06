@@ -62,7 +62,7 @@ public class SecurityConfig {
                     .hasAnyRole("EMPLOYEE" , "ADMIN")
                     .requestMatchers(HttpMethod.PUT , "/Updateemployee/**")
                     .hasAnyRole("ADMIN")
-                    .requestMatchers(HttpMethod.POST , "/employee**")
+                    .requestMatchers(HttpMethod.POST , "/employee")
                     .hasAnyRole("ADMIN")
                     .requestMatchers(HttpMethod.DELETE , "/Deleteemployee/**")
                     .hasAnyRole("ADMIN")
